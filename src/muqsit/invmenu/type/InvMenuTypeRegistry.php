@@ -11,10 +11,10 @@ use pocketmine\network\mcpe\protocol\types\inventory\WindowTypes;
 final class InvMenuTypeRegistry{
 
 	/** @var array<string, InvMenuType> */
-	private array $types = [];
+	private $types = [];
 
 	/** @var array<int, string> */
-	private array $identifiers = [];
+	private $identifiers = [];
 
 	public function __construct(){
 		$this->register(InvMenuTypeIds::TYPE_CHEST, InvMenuTypeBuilders::BLOCK_ACTOR_FIXED()
