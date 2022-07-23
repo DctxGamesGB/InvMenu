@@ -13,11 +13,11 @@ use pocketmine\Server;
 
 final class InvMenuHandler{
 
-	/** @var Plugin $registrant */
+	/** @var Plugin|null */
 	private static $registrant;
-	/** @var InvMenuTypeRegistry $type_registry */
+	/** @var InvMenuTypeRegistry */
 	private static $type_registry;
-	/** @var PlayerManager $player_manager */
+	/** @var PlayerManager */
 	private static $player_manager;
 
 	public static function register(Plugin $plugin) : void{
