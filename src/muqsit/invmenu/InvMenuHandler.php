@@ -14,7 +14,7 @@ use pocketmine\Server;
 final class InvMenuHandler{
 
 	/** @var Plugin $registrant */
-	private static $registrant = null;
+	private static $registrant;
 	/** @var InvMenuTypeRegistry $type_registry */
 	private static $type_registry;
 	/** @var PlayerManager $player_manager */
