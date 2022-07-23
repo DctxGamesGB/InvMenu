@@ -13,9 +13,12 @@ use pocketmine\Server;
 
 final class InvMenuHandler{
 
-	private static ?Plugin $registrant = null;
-	private static InvMenuTypeRegistry $type_registry;
-	private static PlayerManager $player_manager;
+	/** @var Plugin $registrant */
+	private static $registrant = null;
+	/** @var InvMenuTypeRegistry $type_registry */
+	private static $type_registry;
+	/** @var PlayerManager $player_manager */
+	private static $player_manager;
 
 	public static function register(Plugin $plugin) : void{
 		if(self::isRegistered()){
